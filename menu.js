@@ -31,6 +31,16 @@
 */
 
 //CODE HERE
+const pizza = {
+    name: 'pepperoni',
+    price: 10,
+    category: 'entree',
+    popularity: 1,
+    rating: 10,
+    tags: 'best pizza'
+}
+
+
 
 
 
@@ -43,7 +53,7 @@
 */
 
 //CODE HERE
-
+let {popularity} = pizza
 
 /*
     Second, log the second tag in your pizza's
@@ -53,8 +63,8 @@
 */
 
 //CODE HERE
-
-
+pizza['second tag'] = 'kid meal'
+pizza.secondtag = 'kid meal'
 /*
     Third, destructure the price off of the
     pizza object.
@@ -63,7 +73,7 @@
 */
 
 //CODE HERE
-
+delete pizza.price
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +83,7 @@
 */
 
 //CODE HERE
+
 
 
 //////////////////PROBLEM 3////////////////////
