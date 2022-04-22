@@ -1,0 +1,9 @@
+figma URL: https://www.figma.com/file/c8eQxBYKYp1IQwbr8tHMc0/Goff-Foods?node-id=0%3A1
+
+
+EXTRA CREDIT: 
+3 companies: dropbox, adobe, microsoft
+
+microsoft technology stack: The Microsoft stack is a set of applications and tools that are designed to work together—from the back-end data base to coding languages (e.g., C#) and development environments (e.g., Visual Studio), all the way up to platforms and applications, like cloud apps, Microsoft (Office) 365 and so much more
+dropbox technology stack: python, mysql, paster/pylons/cheetah
+adobe technology stack: osgi, jcr, oak and sling
