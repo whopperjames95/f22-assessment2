@@ -30,6 +30,21 @@ getSchedule(){
 
 
 
+//Jeddy's solution:
+
+class Employee{                         //1st step, constructors create objects from the class
+    constructor(name, shift) {
+        this.name = name;
+        this.shifts = shifts;          //difference between method & function: methods are called on the instance of a class, created within a class, functions are standalone code blocks
+    }
+
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shifts}.`);
+    }
+
+}
+
+
 
 /*
     Create a new instance of your class.
@@ -43,12 +58,24 @@ getSchedule(){
 
 //CODE HERE
 
+//jeddys solution:
+const empOne = new Employee("Jess", ["weekday mornings", "weekday afternoons"]);
+
+
+
+
+
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
+//jeddys solution:
+
+empOne.getSchedule();
+
 
 
 /*
@@ -64,15 +91,21 @@ getSchedule(){
 */
 
 //CODE HERE
+//jeddys solution:
 
+const empTwo = {...empOne,name: "Nick"};       //(the ... three dots is the spread operator)
 
 
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a class called Manager that *extends* 
-    the Employee class. In the constructor, 
+    the Employee class. 
+    
+    In the constructor, 
     make sure you require all of the parameters 
-    from the Employee class as well as 1 
+    from the Employee class
+    
+    as well as 1 
     new one: employees, which will be an array of 
     employees that report to this manager. 
     (Hint: don't forget to call the super function)
@@ -92,6 +125,21 @@ getSchedule(){
 
 //CODE HERE
 
+//jeddys solution
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts);
+        this.employees = employees;
+    }
+
+    getEmployees() {
+        console.log(`${this.name} manages ${this.employees}.`);
+    }
+
+    addEmployee(emp) {
+        this.employees.push(emp);                                                              //push is an array method
+    }
+}
 
 
 /*
@@ -106,6 +154,8 @@ getSchedule(){
 */
 
 //CODE HERE
+const manager = new Manager("Winston", ['weekday afternoons'], ["Cece", "Schmidt"])                           // if we create new instance we have to use keyword "NEW"
+
 
 
 /*
@@ -114,6 +164,9 @@ getSchedule(){
 */
 
 //CODE HERE
+manager.getEmployees();
+
+
 
 /*
     Call the `addEmployee` method on the 
@@ -122,6 +175,7 @@ getSchedule(){
 */
 
 //CODE HERE 
+manager.addEmployee("Ernie");
 
 /*
     Call the `getEmployees` method on the
@@ -130,3 +184,5 @@ getSchedule(){
 */
 
 //CODE HERE
+
+manager.getEmployees();

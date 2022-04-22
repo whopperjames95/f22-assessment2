@@ -87,7 +87,9 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 const deals = [
-    {
+    // [index]
+    {    
+        // .title
         title: '15% Off!', 
         desc: 'Applied to your entire order when you spend $30 or more'
     }, 
@@ -102,11 +104,21 @@ const deals = [
     deal down to 10%.
 
     Reassign the value of the first deal's title
-    to be itself, but use the `replace` method
+    to be itself,
+    
+    but use the `replace` method
+
     to replace the 15 with a 10.
 */
 
-//CODE HERE
+//CODE HERE          //reassign you will see an " = " sign
+// access the value inside the array, specify the name of the array: array[index]
+
+array[index]
+
+deals[0].title = deals[0].title.replace("15", "10")                    //replace takes 2 strings 
+console.log(deals[0].title);
+
 
 
 
@@ -124,3 +136,5 @@ const deals = [
 */
 
 //CODE HERE
+
+deals[1].desc = deals[1].desc.trim().replace("March", "April") // trim elminates the "          " spacesin the index
