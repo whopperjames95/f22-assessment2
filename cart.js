@@ -40,6 +40,8 @@ const summedPrice = cart.reduce((total, item)=> {
 
 //console.log(summedPrice)
 
+//total: 26.97
+
 
 
 
@@ -63,9 +65,12 @@ const summedPrice = cart.reduce((total, item)=> {
 */
 
 //CODE HERE
-const calcFinalPrice = (cartTotal, couponValue, tax); {
-    return cartTotal * .06
-}
+
+
+calcFinalPrice (cartTotal, couponValue, tax) {
+    return cartTotal * tax - couponValue
+} 
+
 
 
 
@@ -94,6 +99,13 @@ const calcFinalPrice = (cartTotal, couponValue, tax); {
 
 /*
     TEXT ANSWER HERE
+Plan:
+Customer (Name, Favorite Dish, Favorite Drink, Favorite Appetizer)
+
+Name: customer's name
+favorite dish: customer's favorite food
+favorite drink: customer's favorite drink
+favorite appetizer: customer's favorite appetizer
 
 */
 
@@ -103,3 +115,11 @@ const calcFinalPrice = (cartTotal, couponValue, tax); {
 */
 
 //CODE HERE
+
+
+const customer = {
+    name: 'Bob', 
+    favDish: 'Steak', 
+    favDrink: 'Wine', 
+    favAppetizer: 'French Fries' 
+}
