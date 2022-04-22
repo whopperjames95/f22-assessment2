@@ -20,6 +20,14 @@
 */
 
 //CODE HERE
+function Employee(name, shifts) {
+    this.name = 'James';
+    this.shifts = 'Mornings';
+}
+getSchedule(){
+    console.log(this.name, 'works', this.shifts)
+}
+
 
 
 
